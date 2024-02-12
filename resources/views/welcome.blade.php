@@ -27,7 +27,7 @@
                             $vcard->addJobtitle('Software Engineer & Marketeer');
                             $vcard->addEmail('hello@janushelkjaer.com');
                             #$vcard->addPhoneNumber(1234121212, 'PREF;WORK');
-                            $vcard->addPhoneNumber('004523714902', 'WORK');
+                            $vcard->addPhoneNumber('23714902', 'WORK');
                             #$vcard->addAddress(null, null, 'street', 'worktown', null, 'workpostcode', 'Belgium');
                             $vcard->addURL('https://janushelkjaer.com');
                             #$vcard->addLabel('street, worktown, workpostcode Belgium', 'work');
