@@ -44,12 +44,17 @@
 
                 <div class="p-12 flex flex-col items-center justify-center">
                     <div class="mb-6 ">
+                        <div class="flex flex-col items-center justify-center mb-3">
+                            <div class="rounded-full shadow-inner p-0.5">
+                                <img src="{{ asset('assets/images/jh-vcard.png') }}" alt="Janus Helkjær" class="rounded-full block w-24 h-24">
+                            </div>
+                        </div>
                         <div class="prose">
                         <h3 class="">
                             Janus Helkjær
                         </h1>
                         </div>
-                        <ul class="list-none p-0 m-0">
+                        {{-- <ul class="list-none p-0 m-0">
                             <li class="flex items-center justify-center">
                                 <span class="inline-block p-1 mr-1 bg-slate-100 border rounded"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
   <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
@@ -57,9 +62,9 @@
 </span>
 <a class= href="mailto:hello@janushelkjaer.com">hello@janushelkjaer.com</a>
                             </li>
-                        </ul>
+                        </ul> --}}
                     </div>
-                    <div class="h-64 w-64">
+                    <div class="h-48 w-48 p-3 border-solid border">
                         {{-- {{ QrCode::size(400)->color(000, 000, 000)->style('dot')->generate($vcard->getOutput()) }} --}}
 
                         <img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(400)->style('dot')->generate($vcard->getOutput())) !!} ">
