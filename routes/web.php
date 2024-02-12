@@ -1,6 +1,9 @@
 <?php
 
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
 use Illuminate\Support\Facades\Route;
+use JeroenDesloovere\VCard\VCard;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +17,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
     return view('welcome');
+                
+});
+
+Route::get('/qr-code/v-card', function(){
+
+    
+
 });
 
 Route::middleware([
