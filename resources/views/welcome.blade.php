@@ -34,7 +34,7 @@
 
                         #dd(asset('assets/images/jh-vcard.png'));
 
-                        $vcard->addPhoto(asset('assets/images/jh-vcard.png'));
+                        #$vcard->addPhoto(asset('assets/images/jh-vcard.png'));
                         //$vcard->addPhoto('https://raw.githubusercontent.com/jeroendesloovere/vcard/master/tests/image.jpg');
 
                         // return vcard as a string
